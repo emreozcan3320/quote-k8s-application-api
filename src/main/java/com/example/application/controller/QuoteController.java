@@ -1,8 +1,8 @@
-package com.example.crudapplication.controller;
+package com.example.application.controller;
 
-import com.example.crudapplication.exception.QuoteNotFoundException;
-import com.example.crudapplication.model.Quote;
-import com.example.crudapplication.service.QuoteService;
+import com.example.application.exception.QuoteNotFoundException;
+import com.example.application.model.Quote;
+import com.example.application.service.QuoteService;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -25,7 +25,9 @@ public class QuoteController {
 	private final QuoteService quoteService;
 
 	@GetMapping
-	public Iterable<Quote> getAllQuotes() {	return quoteService.getAll();}
+	public Iterable<Quote> getAllQuotes() {
+		return quoteService.getAll();
+	}
 
 	@GetMapping("/{quoteId}")
 	public Quote getQuoteById(@PathVariable String quoteId) throws QuoteNotFoundException {

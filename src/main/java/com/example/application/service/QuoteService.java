@@ -1,8 +1,8 @@
-package com.example.crudapplication.service;
+package com.example.application.service;
 
-import com.example.crudapplication.exception.QuoteNotFoundException;
-import com.example.crudapplication.model.Quote;
-import com.example.crudapplication.repository.QuoteRepository;
+import com.example.application.exception.QuoteNotFoundException;
+import com.example.application.model.Quote;
+import com.example.application.repository.QuoteRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 

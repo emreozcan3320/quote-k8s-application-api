@@ -1,4 +1,4 @@
-package com.example.crudapplication.model;
+package com.example.application.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

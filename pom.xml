@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>crud-application</artifactId>
+    <artifactId>quote-application-api</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>crud-application</name>
+    <name>quote-application-api</name>
     <description>Simple Crud web application</description>
 
     <properties>
