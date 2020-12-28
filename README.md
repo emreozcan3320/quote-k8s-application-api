@@ -36,29 +36,32 @@ spec:
   
 ---  
   
-apiVersion: apps/v1  
-kind: Deployment  
-metadata:  
-  labels:  
-    app: application-api-deployment  
-  name: application-api-deployment  
-spec:  
-  replicas: 1  
-  selector:  
-    matchLabels:  
-      app: application-api-pod  
-  strategy: {}  
-  template:  
-    metadata:  
-      labels:  
-        app: application-api-pod  
-    spec:  
-      containers:  
-      - image: gcr.io/bionic-trilogy-298608/quote-application-api  
-        name: application-api-container  
-        ports:  
-            - containerPort: 8080  
-        resources: {}  
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: application-api-deployment
+  name: application-api-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: application-api-pod
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: application-api-pod
+    spec:
+      containers:
+      - image: gcr.io/bionic-trilogy-298608/quote-application-api
+        name: application-api-container
+        ports:
+            - containerPort: 8080
+        env:
+            - name: MYSQL_HOST
+              value: mysql
+        resources: {}
 status: {}
  
 ```
