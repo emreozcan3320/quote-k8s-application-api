@@ -4,10 +4,10 @@
 # Stateful Kubernetes CRUD Application Backend
 
 
-This spring boot application is a part of a Medium Post named  **### How to Deploy a Stateful CRUD Web Application to Minikube(Local Cluster) and Google Cloud Kubernetes Engine(GKE)**. It is about creating a Stateful application and deploying it both Minikube(Local Cluster) and Google Cloud Kubernetes Engine(GKE).
+This Spring Boot application is a part of a Medium Post named  **### How to Deploy a Stateful CRUD Web Application to Minikube(Local Cluster) and Google Cloud Kubernetes Engine(GKE)**. It is about creating a Stateful application and deploying it both Minikube(Local Cluster) and Google Cloud Kubernetes Engine(GKE).
 
 ### How to run it?
-This is the only Back-end part of the application so you need the Front-end too. The master branch connects to Google Cloud SQL so if you have a Google Cloud SQL instance update the `application. properties` file to connect your database. But if you don't have a Google Cloud SQL instance, you have to use the local MySql Database, to do so you need to switch to the `minikube-mysql-k8s-deployment` branch. It uses a local MySql database.
+This is the only Backend part of the application so you need the Front-end too. The master branch connects to Google Cloud SQL so if you have a Google Cloud SQL instance update the `application. properties` file to connect your database. But if you don't have a Google Cloud SQL instance, you have to use the local MySql Database, to do so you need to switch to the `minikube-mysql-k8s-deployment` branch. It uses a local MySql database.
 
 Default database credentials are below. But you can change them or pass a new credential as an environment variable while using Docker or Kubernetes.
 - Host: *localhost*
